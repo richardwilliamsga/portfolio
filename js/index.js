@@ -174,7 +174,10 @@ function replaceVid(event) {
 //  NAVIGATION BAR MOBILE
 
 const menubtn = document.querySelector(".menu-btn"); 
-const asidemenu = document.getElementById("navmobmenu")
+const asidemenu = document.getElementById("navmobmenu");
+const navmobskills = document.getElementById("navmobskills");
+const navmobconnect = document.getElementById("navmobconnect");
+const navmobemployment = document.getElementById("navmobemployment");
 
 
 menubtn.addEventListener("click", overlayOpen);
@@ -182,3 +185,18 @@ function overlayOpen() {
   document.querySelector(".navmobmenu").classList.add("navmobmenuopen")
 } 
 
+
+navmobskills.addEventListener("click", closeOverlaySkills);
+function closeOverlaySkills () {
+  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen")
+} 
+
+navmobconnect.addEventListener("click", closeOverlayConnect);
+function closeOverlayConnect () {
+  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen")
+} 
+
+navmobemployment.addEventListener("click", closeOverlayEmployment);
+function closeOverlayEmployment () {
+  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen")
+} 
