@@ -188,15 +188,18 @@ function overlayOpen() {
 
 navmobskills.addEventListener("click", closeOverlaySkills);
 function closeOverlaySkills () {
-  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen")
+  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen");
+  menuBtn.classList.remove("open");
 } 
 
 navmobconnect.addEventListener("click", closeOverlayConnect);
 function closeOverlayConnect () {
-  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen")
+  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen");
+  menuBtn.classList.remove("open");
 } 
 
 navmobemployment.addEventListener("click", closeOverlayEmployment);
 function closeOverlayEmployment () {
-  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen")
+  document.querySelector(".navmobmenu").classList.remove("navmobmenuopen");
+  menuBtn.classList.remove("open");
 } 
