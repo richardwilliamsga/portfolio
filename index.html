@@ -11,26 +11,42 @@
 </head>
 
 <body>
-  <aside id="navmobmenu">
-    <a href=".employment" class="navmob">Skills</a>
+
+  <aside class="navmobmenu">
+    <a href=".skillscomp" class="navmob">Skills</a>
     <a href=".employment" class="navmob">Employment</a>
     <a href=".connect" class="navmob">Connect</a>
   </aside>
   
+
   <nav>
-    <a href=".employment" class="navdesktop">Skills</a>
+    <a href=".skillscomp" class="navdesktop">Skills</a>
     <a href=".employment" class="navdesktop">Employment</a>
     <a href=".connect" class="navdesktop">Connect</a>
     <div class="menu-btn">
       <div class="menu-btn__burger"></div>
     </div>
-    <script src="main.js"></script>
   </nav>
 
   <main>
-    <img class="profile" src="https://media-exp1.licdn.com/dms/image/C5603AQEcCjRcgfP1ug/profile-displayphoto-shrink_800_800/0/1605498758961?e=1628121600&v=beta&t=LKrzPfdQNxL4ZcRA2I2_XmoSyPRedSpdw74NV-9bS2Y" alt="Richard Profile">
+    <img class="profile" src="img/richwprofilepcic.jpeg" alt="Richard Profile">
     <h1>Rich Williams</h1>
-    <h2>Impact | Tech | Education | Community</h2>
+    <!-- <h2>Impact | Tech | Education | Community</h2> -->
+    <form action="/action_page.php">
+      <label> See where I have worked</label>
+      <select id="places">
+        <option value="sydney">Sydney</option>
+        <option value="london">London</option>
+        <option value="sanfrancisco">San Francisco</option>
+        <option value="newyork">New York</option>
+        <option value="melbourne">Melbourne</option>
+       
+      </select>
+      <!-- <input type="submit"> -->
+    </form>
+    <video id="videoBG"   poster="poster.JPG" autoplay muted loop>
+      <source id="videosource" src="img/Sydney.mp4" type="video/mp4">
+  </video>
   </main>
 
   <!--   SKILLS | Competencies
@@ -44,7 +60,7 @@
         <span class="bar"><span class="skill-1"></span> </span>
       </li>
       <li>
-        <h3>Strate & Operations</h3> <span class="bar"><span class="skill-2"></span> </span>
+        <h3>Strategy & Operations</h3> <span class="bar"><span class="skill-2"></span> </span>
       </li>
       <li>
         <h3>Project Management</h3> <span class="bar"><span class="skill-3"></span> </span>
@@ -69,20 +85,20 @@
     <h2>Roles | Employment</h2>
     <section class="section1">
       <section class="section1a">
-        <img onmouseover="gahover()" onmouseout="galeave()" class="logoimg" id="galogo" src="https://lh3.googleusercontent.com/proxy/sU6iLcdcMGf9Y0uuSOnGAKaFGzeMCT-9gxI6oBSqVxcbMlMM2GZ6DbP3ST9kKA0I8dhmbteXSJ7ghG5-v_Tvmsj_SnksUx0LkXJAT7qiX4h35pJalDm_6G-UJWZAYYfbknw">
+        <img onmouseover="gahover()" onmouseout="galeave()" class="logoimg" id="galogo" src="img/galogo.png">
         <div id="gatext">
           <h4>Instructor Manager | 04/2020 - Present</h4>
           <ul>
             <li><b>Technical Recruitment</b> - Hire diverse top-tier senior leaders across the tech industry from Software Engineers, UX Designers, Data Scientists, Product Managers and more. High volume contract recruitment (150+ contracts/year)</li>
             <div></div>
-            <li><b>People Management</b> - Engage, support and develop a high performing talent pool of 150+ Instructors across Australia. Providing training opportunities, project support and trouble shooting.</li>
+            <li><b>People Management</b> - Engage, support and develop a high performing talent pool of 150+ Instructors across APAC. Providing training opportunities, project support and trouble shooting.</li>
             <div></div>
             <li><b>Project Management</b> - Project manage up to 15 courses at any given time as well as developing and implementing strategic projects such as scalable non-bias performance tracking, building an innovation community, executing on enterprise deals and critical operations.</li>
           </ul>
         </div>
       </section>
       <section class="section1b">
-        <img onmouseover="harambeanhover()" onmouseout="harambeanleave()" class="logoimg" id="harambean" src="https://cdn.movemeback.com/media/thumbnails/images/harambeans-organisation-logo-20190918-10302563/86a0603226b4949469c872834271cda3.jpg" alt="Harambeans">
+        <img onmouseover="harambeanhover()" onmouseout="harambeanleave()" class="logoimg" id="harambean" src="img/harambeanslogo.jpeg" alt="Harambeans">
         <div id="harambeantext">
           <h4>Startup Advisor | London, Accra | 08/2019 - 02/2020</h4>
           <ul>
@@ -98,7 +114,7 @@
 
     <section class="section2">
       <section class="section2a">
-        <img onmouseover="czihover()" onmouseout="czileave()" class="logoimg" id="cziimg" src="https://www.cshl.edu/wp-content/uploads/2017/04/czi_hero.jpg">
+        <img onmouseover="czihover()" onmouseout="czileave()" class="logoimg" id="cziimg" src="img/czilogo.jpeg">
 
         <div id="czitext">
           <h4>Startup Advisor | Palo Alto | 04/2017 - 11/2017</h4>
@@ -112,7 +128,7 @@
         </div>
       </section>
       <section class="section2b">
-        <img onmouseover="changehover()" onmouseout="changeleave()" class="logoimg" id="changeimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Change.org_logo.svg/1280px-Change.org_logo.svg.png">
+        <img onmouseover="changehover()" onmouseout="changeleave()" class="logoimg" id="changeimg" src="img/Change.org_Logo_full.png">
         <div id="changetext">
           <h4>Chief of Staff | San Francisco | 05/2016 - 04/2017</h4>
           <ul>
@@ -130,7 +146,7 @@
       </section>
     </section>
     <section class"section3">
-      <img onmouseover="oaktreehover()" onmouseout="oaktreeleave()" class="logoimg" id="oaktreeimg" src="https://d2eyml6uxo39jm.cloudfront.net/4fxyggy0fbqw.png">
+      <img onmouseover="oaktreehover()" onmouseout="oaktreeleave()" class="logoimg" id="oaktreeimg" src="img/oaktreelogo.png">
       <div id="oaktreetext">
         <h4>Fundraising Director | Melbourne | 02/2012 - 07/2014</h4>
         <ul>

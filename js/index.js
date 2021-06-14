@@ -131,15 +131,47 @@ function oaktreeleave() {
   document.getElementById("oaktreeimg").style.boxShadow = "none";
 }
 
-// var mql = window.matchMedia('(max-width: 700px)');
 
-// mql.addEventListener( "change", (e) => {
-//     if (e.matches) {
-//     /* the viewport is 600 pixels wide or less */
-//     document.getElementById("gatext").style.display = "none";
-//     document.getElementById("gatext2").style.display = "flex";
-//     } else {
-//     /* the viewport is more than than 600 pixels wide */
-//     document.getElementById("gatext").style.display = "none";
-//   }
-// })
+
+// Places I worked form //
+
+const placesWorked = document.getElementById("places"); 
+
+placesWorked.addEventListener("change", replaceVid);
+function replaceVid(event) {
+  const userChoice = placesWorked.value
+  console.log(userChoice)
+  if(userChoice === "london") {
+    console.log("London")
+    document.getElementById("videoBG").setAttribute("src","img/London.mp4")
+  }
+  else if(userChoice === "newyork") {
+    console.log("New York")
+  document.getElementById("videoBG").setAttribute("src","img/Newyork.mp4")
+  }
+  else if(userChoice === "sanfrancisco") {
+    console.log("San Francisco")
+  document.getElementById("videoBG").setAttribute("src","img/SanFrancisco.mp4")
+  }
+  else if(userChoice === "sydney") {
+    console.log("Syndey")
+  document.getElementById("videoBG").setAttribute("src","img/Sydney.mp4")
+  }
+  else if(userChoice === "melbourne") {
+    console.log("Melbourne")
+  document.getElementById("videoBG").setAttribute("src","img/Melbourne.mp4")
+  }
+ }
+
+
+//  NAVIGATION BAR MOBILE
+
+const menubtn = document.querySelector(".menu-btn"); 
+const asidemenu = document.getElementById("navmobmenu")
+
+
+menubtn.addEventListener("click", overlayOpen);
+function overlayOpen() {
+  console.log("hello")
+  document.querySelector(".navmobmenu").classList.add("navmobmenuopen")
+} 
