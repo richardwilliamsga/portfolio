@@ -13,16 +13,16 @@
 <body>
 
   <aside class="navmobmenu">
-    <a href=".skillscomp" class="navmob">Skills</a>
-    <a href=".employment" class="navmob">Employment</a>
-    <a href=".connect" class="navmob">Connect</a>
+    <a href="#skillscomp" class="navmob">Skills</a>
+    <a href="#employment" class="navmob">Employment</a>
+    <a href="#connect" class="navmob">Connect</a>
   </aside>
   
 
   <nav>
-    <a href=".skillscomp" class="navdesktop">Skills</a>
-    <a href=".employment" class="navdesktop">Employment</a>
-    <a href=".connect" class="navdesktop">Connect</a>
+    <a href="#skillscomp" class="navdesktop">Skills</a>
+    <a href="#employment" class="navdesktop">Employment</a>
+    <a href="#connect" class="navdesktop">Connect</a>
     <div class="menu-btn">
       <div class="menu-btn__burger"></div>
     </div>
@@ -33,14 +33,17 @@
     <h1>Rich Williams</h1>
     <!-- <h2>Impact | Tech | Education | Community</h2> -->
     <form action="/action_page.php">
-      <label> See where I have worked</label>
+      <label id= "formtxt" > See where I have worked...</label>
       <select id="places">
-        <option value="sydney">Sydney</option>
+        <option value="sydney"><b>Sydney</b></option>
         <option value="london">London</option>
+        <option value="accra">Accra</option>
         <option value="sanfrancisco">San Francisco</option>
         <option value="newyork">New York</option>
+        <option value="darjeeling">Darjeeling</option>
+        <option value="portmoresby">Port Moresby</option>
+        <option value="siemreap">Siem Reap</option>
         <option value="melbourne">Melbourne</option>
-       
       </select>
       <!-- <input type="submit"> -->
     </form>
@@ -51,7 +54,7 @@
 
   <!--   SKILLS | Competencies
    -->
-  <section class="skillscomp">
+  <section id="skillscomp">
 
     <div class="skills">
       <h2>Skills | Competencies</h2>
@@ -81,7 +84,7 @@
 
   </section>
   <!--   EMPLOYMENT -->
-  <section class="employment">
+  <section class="employment" id="employment">
     <h2>Roles | Employment</h2>
     <section class="section1">
       <section class="section1a">
@@ -161,13 +164,12 @@
   </section>
 
   <!-- Lets Connect   -->
-  <section class="connect">
+  <section class="connect" id="connect">
     <h2>Let's connect</h2>
-    <p>Please leave you name, email and message below</p>
+    <p>Please leave you name, email and message below.</p>
     <form id="enquiry-form">
       <form>
         <fieldset>
-          <legend></legend>
           <input type="text" id="name" placeholder="Name">
           <input type="email" id="email" placeholder="Email">
           <div>

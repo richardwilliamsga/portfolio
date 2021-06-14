@@ -142,25 +142,32 @@ function replaceVid(event) {
   const userChoice = placesWorked.value
   console.log(userChoice)
   if(userChoice === "london") {
-    console.log("London")
     document.getElementById("videoBG").setAttribute("src","img/London.mp4")
   }
   else if(userChoice === "newyork") {
-    console.log("New York")
   document.getElementById("videoBG").setAttribute("src","img/Newyork.mp4")
   }
   else if(userChoice === "sanfrancisco") {
-    console.log("San Francisco")
   document.getElementById("videoBG").setAttribute("src","img/SanFrancisco.mp4")
   }
   else if(userChoice === "sydney") {
-    console.log("Syndey")
   document.getElementById("videoBG").setAttribute("src","img/Sydney.mp4")
   }
   else if(userChoice === "melbourne") {
-    console.log("Melbourne")
   document.getElementById("videoBG").setAttribute("src","img/Melbourne.mp4")
   }
+  else if(userChoice === "accra") {
+    document.getElementById("videoBG").setAttribute("src","img/accra.mp4")
+    }
+    else if(userChoice === "siemreap") {
+      document.getElementById("videoBG").setAttribute("src","img/siemreap.mp4")
+      }
+      else if(userChoice === "darjeeling") {
+        document.getElementById("videoBG").setAttribute("src","img/darjeeling.mp4")
+        }
+        else if(userChoice === "portmoresby") {
+          document.getElementById("videoBG").setAttribute("src","img/portmoresby.mp4")
+          }
  }
 
 
@@ -172,6 +179,6 @@ const asidemenu = document.getElementById("navmobmenu")
 
 menubtn.addEventListener("click", overlayOpen);
 function overlayOpen() {
-  console.log("hello")
   document.querySelector(".navmobmenu").classList.add("navmobmenuopen")
 } 
+

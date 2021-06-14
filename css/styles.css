@@ -1,5 +1,3 @@
-
-
 /* NAVIGATION BAR */
 
 .navdesktop {
@@ -17,26 +15,28 @@ nav {
   align-items: center;
 }
 .navmobmenu {
-  background-color: rgba(7, 34, 53, 1);
+  background-color: rgb(104, 174, 224);
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  opacity: 0;
+  opacity: 75%;
   overflow-y: scroll;
   padding: 15px 30px;
   position: fixed;
   transition: all 0.35s ease-in-out;
   transform: translateX(100%);
-  
-  z-index: 10;
+  z-index: 1;
 }
 .navmobmenuopen {
   transform: translateX(0%);
-  opacity: 1;
+  opacity: 75%;
+  z-index: 1;
 }
 
-#navmobmenu a, #navmobmenu a:focus, .navmobmenu a:visited {
+#navmobmenu a,
+#navmobmenu a:focus,
+.navmobmenu a:visited {
   color: white;
   display: block;
   font-size: 50px;
@@ -49,6 +49,18 @@ nav {
   color: darkred;
 }
 
+.navmob {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 36px;
+  color: white;
+  text-decoration: none;
+}
 
 /* BURGER */
 
@@ -62,17 +74,18 @@ nav {
   height: 60px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu-btn__burger {
+  position: relative;
   width: 30px;
   height: 6px;
   background: #2187e7b3;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.5s ease-in-out;
-  z-index: 10;
+  z-index: 100;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after {
@@ -84,15 +97,15 @@ nav {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   transition: all 0.5s ease-in-out;
-  z-index: 10;
+  z-index: 100;
 }
 .menu-btn__burger::before {
   transform: translateY(-16px);
-  z-index: 10;
+  z-index: 100;
 }
 .menu-btn__burger::after {
   transform: translateY(16px);
-  z-index: 10;
+  z-index: 100;
 }
 /* ANIMATION */
 .menu-btn.open .menu-btn__burger {
@@ -501,4 +514,15 @@ form {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
+}
+
+#places {
+  font-size: 36px; 
+  font-weight: bold; 
+  border: none; 
+  background-color: rgba(255, 255, 255, 0); 
+}
+
+#formtxt {
+  font-size: 36px; 
 }
