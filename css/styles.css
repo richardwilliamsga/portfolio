@@ -19,7 +19,7 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  opacity: 75%;
+  opacity: 90%;
   overflow-y: scroll;
   padding: 15px 30px;
   position: fixed;
@@ -29,7 +29,7 @@ nav {
 }
 .navmobmenuopen {
   transform: translateX(0%);
-  opacity: 75%;
+  opacity: 90%;
   z-index: 1;
 }
 
@@ -45,7 +45,6 @@ nav {
 }
 #navmobmenu-close {
   background-color: white;
-  color: darkred;
 }
 
 .navmob {
@@ -516,12 +515,12 @@ form {
 }
 
 #places {
-  font-size: 36px; 
-  font-weight: bold; 
-  border: none; 
-  background-color: rgba(255, 255, 255, 0); 
+  font-size: 36px;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #formtxt {
-  font-size: 36px; 
+  font-size: 36px;
 }
